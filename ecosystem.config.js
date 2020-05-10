@@ -6,7 +6,7 @@ module.exports = {
   deploy: {
     production: {
       user: 'me',
-      host: 'me@adityaninawe',
+      host: 'me@207.246.67.124',
       key: '~/.ssh/me.pem',
       ref: 'origin/master',
       repo: 'git@github.com:ecomerse/devconnector-backend.git',
