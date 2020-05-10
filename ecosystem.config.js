@@ -7,7 +7,7 @@ module.exports = {
     production: {
       user: 'me',
       host: 'me@207.246.67.124',
-      key: '~/.ssh/tutorial-2.pem',
+      key: '~/.ssh/me.pem',
       ref: 'origin/master',
       repo: 'git@github.com:ecomerse/devconnector-backend.git',
       path: '/home/ubuntu/devconnector',
