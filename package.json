@@ -6,8 +6,6 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "restart": "pm2 startOrRestart ecosystem.config.js",
-    "deploy": "pm2 deploy ecosystem.config.js production",
     "test": "echo \"Error: no test specified\" && exit 1",
     "client-install": "npm install --prefix client",
     "client": "npm start --prefix client",
@@ -17,19 +15,19 @@
   "author": "Aditya Ninawe",
   "license": "MIT",
   "dependencies": {
+      "axios": "^0.19.2",
     "bcryptjs": "^2.4.3",
-    "body-parser": "^1.19.0",
-    "concurrently": "^5.1.0",
+    "client": "file:client",
+    "config": "^3.3.0",
     "express": "^4.17.1",
+    "express-validator": "^6.4.0",
     "gravatar": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.8.11",
-    "passport": "^0.4.1",
-    "passport-jwt": "^4.0.0",
-    "validator": "^12.2.0"
+    "mongoose": "^5.9.5",
+    "normalize-url": "^5.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.2",
-    "pm2": "^4.4.0"
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
   }
 }
